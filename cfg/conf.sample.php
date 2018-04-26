@@ -68,6 +68,9 @@ languageselection = false
 ; sha256 in HMAC for the deletion token
 zerobincompatibility = false
 
+; if true, footer display is disabled. default is false.
+; footerdisabled = true
+
 [expire]
 ; expire value that is selected per default
 ; make sure the value exists in [expire_options]

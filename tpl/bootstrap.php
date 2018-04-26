@@ -345,6 +345,9 @@ endif;
 				<span class="small"><?php echo I18n::_('In case this message never disappears please have a look at <a href="https://github.com/PrivateBin/PrivateBin/wiki/FAQ#why-does-not-the-loading-message-go-away">this FAQ for information to troubleshoot</a>.'); ?></span>
 			</div>
 		</section>
+<?php
+if (!$FOOTERDISABLED):
+?>
 		<footer class="container">
 			<div class="row">
 				<h4 class="col-md-5 col-xs-8"><?php echo I18n::_('PrivateBin'); ?> <small>- <?php echo I18n::_('Because ignorance is bliss'); ?></small></h4>
@@ -354,6 +357,9 @@ endif;
 				</p>
 			</div>
 		</footer>
+<?php
+endif;
+?>
 		<div id="cipherdata" class="hidden"><?php echo htmlspecialchars($CIPHERDATA, ENT_NOQUOTES); ?></div>
 	</body>
 </html>

@@ -435,6 +435,7 @@ class PrivateBin
         $page->assign('STATUS', I18n::_($this->_status));
         $page->assign('VERSION', self::VERSION);
         $page->assign('DISCUSSION', $this->_conf->getKey('discussion'));
+        $page->assign('FOOTERDISABLED', $this->_conf->getKey('footerdisabled'));
         $page->assign('OPENDISCUSSION', $this->_conf->getKey('opendiscussion'));
         $page->assign('MARKDOWN', array_key_exists('markdown', $formatters));
         $page->assign('SYNTAXHIGHLIGHTING', array_key_exists('syntaxhighlighting', $formatters));
